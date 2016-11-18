@@ -45,11 +45,12 @@
 			</div>
 		</div>
 		<div class="sidebar">
-			<div class="test">
-				<div onclick="loadHomePage()"><span>Home</span></div>
-				<div onclick="loadAboutMePage()"><span>About me</span></div>
-				<div onclick="loadLoginPage()"><span>Log in</span></div>
-			</div>
+			<nav>
+				<a onclick="loadPage('home')"><span>Home</span></a>
+				<a onclick="loadPage('aboutme')"><span>About me</span></a>
+				<a onclick="loadPage('login')"><span>Log in</span></a>
+				<a onclick="loadPage('signup')"><span>Sign up</span></a>
+			</nav>
 		</div>
 		<div class="row nopadding">
 			<div class="col-xs-12">

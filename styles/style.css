@@ -1,0 +1,243 @@
+/*this is a list of color codes used in this stylesheet*/
+/*737488*/
+/*2A2A2A*/
+/*9898b0*/
+/*5b5c6e*/
+
+body {
+    background-color: #2A2A2A;
+    color: #9898b0;
+}
+.header {
+    background-color: #5b5c6e;
+    font-size: 32px;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.posts{
+    margin: 20px auto;
+}
+.posts li{
+    position: relative;
+}
+.posts li a{
+    position: absolute;
+    right: 0px;
+}
+.posts li a{
+    position: absolute;
+    right: 0px;
+}
+.posts li div img{
+    width: 100%;
+}
+.posts form{
+    margin-bottom: 150px;
+}
+.post-form label{
+    font-size: 35px;
+}
+
+input, textarea{
+    color: white;
+}
+
+nav{
+    background-color: #9898b0;
+}
+
+nav div ul li{
+    background-color: #5b5c6e;
+    font-weight: bold;
+}
+
+nav div ul li a{
+    color: #9898b0;
+}
+
+nav .brand-logo.right {
+    right: 5.5rem;
+}
+
+.page-title{
+
+}
+.page-title h2 {
+    background-color: #5b5c6e;
+    margin: 0px auto;
+    width: fit-content;
+    padding: 16px 16px;
+}
+
+.page-name{
+    position: absolute;
+    left: 253px;
+    width: calc(100% - 320px);
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone */ 
+@media only screen and (min-width : 320px) {
+    /*.background{*/
+		/*background-color: #737488;*/
+
+	/*}*/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	/*.background{
+        background-color: #737488;
+    }*/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /*.background{
+        background-color: #737488;
+    }*/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /*.background{
+        background-color: #737488;
+    }*/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /*.background{
+        background-color: #737488;
+    }*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.jumbotron{*/
+    /*margin-bottom: 0px;*/
+/*}*/
+/*.header{*/
+    /*background-color: #2A2A2A;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.togglenav{*/
+    /*display: block;*/
+    /*margin: 0px auto;*/
+    /*height: 50px;*/
+    /*width: 100px;*/
+    /*!*background: url(../public/images/togglenav.png) 50% 50% no-repeat;*!*/
+    /*font-size: 9vw;*/
+/*}*/
+/*.togglenav a span{*/
+    /*color: #48adcc;*/
+/*}*/
+/*.title h1{*/
+    /*margin-top: 10px;*/
+/*}*/
+/*.diagonal-lines div:nth-child(1):after{*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*border-top: 60px solid #48adcc;*/
+    /*width: 300px;*/
+    /*transform: rotate(120deg);*/
+    /*transform-origin: 36% 19%;*/
+/*}*/
+/*.diagonal-lines div:nth-child(2):after{*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*border-top: 35px solid #48adcc;*/
+    /*width: 300px;*/
+    /*transform: rotate(120deg);*/
+    /*transform-origin: 50% 75%;*/
+/*}*/
+/*.diagonal-lines div:nth-child(3):after{*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*border-top: 35px solid #48adcc;*/
+    /*width: 300px;*/
+    /*transform: rotate(120deg);*/
+    /*transform-origin: 63% 125%;*/
+/*}*/
+/*.sidebar{*/
+    /*position: absolute;*/
+    /*z-index: 888;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-color: rgba(42, 42, 42, 0.95);*/
+    /*-webkit-transition: all 0.3s ease;*/
+    /*transition: all 0.3s ease;*/
+    /*left: auto !important;*/
+    /*-webkit-transform: translateX(-100%);*/
+    /*transform: translateX(-100%);*/
+/*}*/
+/*.open{*/
+    /*left: auto !important;*/
+    /*-webkit-transform: translateX(0px);*/
+    /*transform: translateX(0px);*/
+/*}*/
+/*nav{*/
+    /*padding: 16px;*/
+/*}*/
+/*nav a{*/
+    /*text-decoration: none !important;*/
+    /*padding: 16px;*/
+    /*font-size: 60px;*/
+    /*display: block;*/
+    /*text-align: center;*/
+/*}*/
+/*.content{*/
+    /*padding: 20px;*/
+    /*margin: 20px 0px 20px 0px;*/
+    /*background-color: #2A2A2A;*/
+/*}*/
+/*.content h1{*/
+    /*margin-top: 0px*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,8 +1,20 @@
 /*this is a list of color codes used in this stylesheet*/
-/*737488*/
-/*2A2A2A*/
-/*9898b0*/
-/*5b5c6e*/
+/*#737488*/
+/*#2A2A2A*/
+/*#9898b0*/
+/*#5b5c6e*/
+/*#48adcc*/
+
+
+@font-face {
+    font-family: "font";
+    src: url(/mywebsite/fonts/astron_boy.ttf) format("truetype");
+    /*src: url(/mywebsite/fonts/astron_boy.otf) format("opentype");*/
+    font-weight: normal;
+}
+p.header {
+
+}
 
 body {
     background-color: #2A2A2A;
@@ -11,6 +23,16 @@ body {
 .header {
     background-color: #5b5c6e;
     font-size: 32px;
+    position: absolute;
+    width:  100%;
+    z-index: 11;
+}
+.header h2 {
+    margin: 0px auto;
+    width: fit-content;
+    padding: 16px 16px;
+    color: #48adcc;
+    font-size: 70px;
 }
 .nopadding {
     padding: 0 !important;
@@ -20,21 +42,27 @@ body {
 .posts{
     margin: 20px auto;
 }
-.posts li{
+
+.post{
     position: relative;
+    max-width: 800px;
+    margin: 0px auto 100px auto;
+
 }
-.posts li a{
+.post a{
     position: absolute;
     right: 0px;
 }
-.posts li a{
-    position: absolute;
-    right: 0px;
+.post h2{
+    background-color: #5b5c6e;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 10px;
 }
-.posts li div img{
+.post div img{
     width: 100%;
 }
-.posts form{
+.post form{
     margin-bottom: 150px;
 }
 .post-form label{
@@ -62,23 +90,28 @@ nav .brand-logo.right {
     right: 5.5rem;
 }
 
-.page-title{
 
+.custom-margin{
+    margin-top: 115px;
 }
-.page-title h2 {
-    background-color: #5b5c6e;
-    margin: 0px auto;
-    width: fit-content;
-    padding: 16px 16px;
+.blink_me {
+    animation: blinker 2s linear infinite;
+    font-family: "font", Verdana, Tahoma;
+    font-style: italic;
 }
 
-.page-name{
-    position: absolute;
-    left: 253px;
-    width: calc(100% - 320px);
-    border: 1px solid black;
-    text-align: center;
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
+/*.page-name{*/
+    /*position: absolute;*/
+    /*left: 253px;*/
+    /*width: calc(100% - 320px);*/
+    /*border: 1px solid black;*/
+    /*text-align: center;*/
+/*}*/
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone */ 
@@ -117,9 +150,16 @@ nav .brand-logo.right {
     }*/
 }
 
-
-
-
+/*.brand-logo{*/
+    /*width: 300px;*/
+    /*background: repeating-linear-gradient(*/
+            /*-50deg,*/
+            /*#48adcc,*/
+            /*#48adcc 10px,*/
+            /*#9898b0 10px,*/
+            /*#9898b0 40px*/
+    /*);*/
+/*}*/
 
 
 
@@ -155,30 +195,35 @@ nav .brand-logo.right {
 /*.title h1{*/
     /*margin-top: 10px;*/
 /*}*/
-/*.diagonal-lines div:nth-child(1):after{*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*border-top: 60px solid #48adcc;*/
-    /*width: 300px;*/
-    /*transform: rotate(120deg);*/
-    /*transform-origin: 36% 19%;*/
-/*}*/
-/*.diagonal-lines div:nth-child(2):after{*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*border-top: 35px solid #48adcc;*/
-    /*width: 300px;*/
-    /*transform: rotate(120deg);*/
-    /*transform-origin: 50% 75%;*/
-/*}*/
-/*.diagonal-lines div:nth-child(3):after{*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*border-top: 35px solid #48adcc;*/
-    /*width: 300px;*/
-    /*transform: rotate(120deg);*/
-    /*transform-origin: 63% 125%;*/
-/*}*/
+.diagonal-lines{
+    position: absolute;
+    right: 147px;
+}
+
+.diagonal-lines div:nth-child(1):after{
+    content: "";
+    position: absolute;
+    border-top: 20px solid #48adcc;
+    width: 105px;
+    transform: rotate(120deg);
+    transform-origin: 14% 19%;
+}
+.diagonal-lines div:nth-child(2):after{
+    content: "";
+    position: absolute;
+    border-top: 15px solid #48adcc;
+    width: 105px;
+    transform: rotate(120deg);
+    transform-origin: 35% 75%;
+}
+.diagonal-lines div:nth-child(3):after{
+    content: "";
+    position: absolute;
+    border-top: 10px solid #48adcc;
+    width: 105px;
+    transform: rotate(120deg);
+    transform-origin: 41% 200%;
+}
 /*.sidebar{*/
     /*position: absolute;*/
     /*z-index: 888;*/

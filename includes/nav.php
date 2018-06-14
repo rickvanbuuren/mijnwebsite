@@ -20,7 +20,10 @@ switch(gethostname()){
 
 <nav>
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo right"><i class="material-icons">cloud</i></a>
+        <a href="#" class="brand-logo right">
+            <i class=""></i>
+        </a>
+
         <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li><a href="<?= $rootFolder ?>/index.php">Home</a></li>
 
@@ -30,8 +33,10 @@ switch(gethostname()){
             <li><a href="<?= $rootFolder ?>/pages/projects.php">Projects</a></li>
 
         </ul>
-        <div class="page-name">
-
+        <div class="page-name diagonal-lines">
+                <div></div>
+                <div></div>
+                <div></div>
         </div>
 
         <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -47,6 +52,6 @@ switch(gethostname()){
     </div>
 </nav>
 
-<div class="page-title header">
-    <h2>Rick van Buuren</h2>
+<div class="header ">
+    <h2 class="blink_me">Rick van Buuren</h2>
 </div>

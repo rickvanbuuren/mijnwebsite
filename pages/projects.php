@@ -27,7 +27,7 @@ include_once ('../includes/nav.php')
 
 <body>
     <div class="container custom-margin">
-        <h2>Projects</h2>
+<!--        <h2>Projects</h2>-->
         <ul class="posts">
             <?php
 
@@ -43,9 +43,8 @@ include_once ('../includes/nav.php')
 
             foreach($posts as $key => $post){
                 ?>
-                <li>
-<!--                    <a href="../includes/removepost.inc.php?remove=--><?//= $post['id']; ?><!--">Remove --><?//= $post['title'] ;?><!--</a>-->
-                    <h1><?= $post['title']; ?></h1>
+                <li class="post">
+                    <h2><?= $post['title']; ?></h2>
                     <div ><img src="../images/<?= $post['image'] ?>"></div>
                     <p> <?= $post['description']; ?></p>
                 </li>

@@ -24,7 +24,7 @@ switch(gethostname()){
             <i class=""></i>
         </a>
 
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <ul id="nav-mobile" class="left">
             <li><a href="<?= $rootFolder ?>/index.php">Home</a></li>
 
             <!--     denk aan github links voor in about me       -->
@@ -39,7 +39,7 @@ switch(gethostname()){
                 <div></div>
         </div>
 
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <ul id="nav-mobile" class="right">
             <?php
                 if(!isset($_SESSION['u_id'])){?>
                     <li><a href="<?= $rootFolder ?>/pages/login.php">Login</a></li>
@@ -52,6 +52,6 @@ switch(gethostname()){
     </div>
 </nav>
 
-<div class="header ">
+<div class="header clearfix">
     <h2 class="blink_me">Rick van Buuren</h2>
 </div>

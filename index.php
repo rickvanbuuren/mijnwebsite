@@ -13,13 +13,21 @@ switch(gethostname()){
 <html lang="en">
 <head>
     <?php
-        include_once 'includes/head.php';
+        include_once ('includes/head.php');
     ?>
 </head>
 <body>
 
 <?php
-    include_once 'includes/nav.php';
+    include_once ('includes/nav.php');
+?>
+
+<?php
+    include_once ('includes/homepage.php')
+?>
+
+<?php
+    include_once ('includes/footer.php')
 ?>
 
 

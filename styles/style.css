@@ -5,20 +5,18 @@
 /*#5b5c6e*/
 /*#48adcc*/
 
-
 @font-face {
     font-family: "font";
     src: url(/mywebsite/fonts/astron_boy.ttf) format("truetype");
     /*src: url(/mywebsite/fonts/astron_boy.otf) format("opentype");*/
     font-weight: normal;
 }
-p.header {
-
-}
-
 body {
     background-color: #2A2A2A;
     color: #9898b0;
+}
+.remove-margin-bottom{
+    margin-bottom: 0px !important;
 }
 .header {
     background-color: #5b5c6e;
@@ -38,11 +36,9 @@ body {
     padding: 0 !important;
     margin: 0 !important;
 }
-
 .posts{
     margin: 20px auto;
 }
-
 .post{
     position: relative;
     max-width: 800px;
@@ -72,11 +68,9 @@ body {
 input, textarea{
     color: white;
 }
-
 nav{
     background-color: #9898b0;
 }
-
 nav div ul li{
     background-color: #5b5c6e;
     font-weight: bold;
@@ -100,18 +94,58 @@ nav .brand-logo.right {
     font-style: italic;
 }
 
+footer {
+    background-color: #5b5c6e;
+    height: 140px;
+}
+
+.copyright{
+    height: 140px;
+    padding: 59px 0px !important;
+}
+
+.homepage{
+    margin-top: 109px;
+    position: relative;
+}
+.background-img{
+    float: left;
+}
+.homepage-content{
+    position: absolute;
+    width: 70%;
+    top: 25%;
+}
+
+.homepage-content p{
+    font-size: 4.5vw;
+    font-family: "font", Verdana, Tahoma;
+}
+.aboutme{
+    margin-top: 109px;
+}
+.my-card{
+    margin-top: 10pc;
+    background-color: #5b5c6e;
+}
+.my-card-bottom{
+    color: #5b5c6e;
+    background-color: #9898b0;
+}
+
 @keyframes blinker {
     50% {
         opacity: 0;
     }
 }
-/*.page-name{*/
-    /*position: absolute;*/
-    /*left: 253px;*/
-    /*width: calc(100% - 320px);*/
-    /*border: 1px solid black;*/
-    /*text-align: center;*/
-/*}*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone */ 

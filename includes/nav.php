@@ -31,6 +31,10 @@ switch(gethostname()){
             <li><a href="<?= $rootFolder ?>/pages/aboutme.php">About me</a></li>
 
             <li><a href="<?= $rootFolder ?>/pages/projects.php">Projects</a></li>
+            <?php
+            if(isset($_SESSION['u_id'])){?>
+            <li><a href="<?= $rootFolder ?>/pages/controlpanel.php">Controlpanel</a></li>
+            <?php } ?>
 
         </ul>
         <div class="page-name diagonal-lines">
@@ -42,10 +46,10 @@ switch(gethostname()){
         <ul id="nav-mobile" class="right">
             <?php
                 if(!isset($_SESSION['u_id'])){?>
-                    <li><a href="<?= $rootFolder ?>/pages/login.php">Login</a></li>
+                    <li style="position: relative;z-index: 99;"><a href="<?= $rootFolder ?>/pages/login.php">Login</a></li>
                 <?php }
                 else { ?>
-                    <li><a href="<?= $rootFolder ?>/includes/logout.inc.php">Logout</a></li>
+                    <li style="position: relative;z-index: 99;"><a href="<?= $rootFolder ?>/includes/logout.inc.php">Logout</a></li>
                 <?php } ?>
 
         </ul>

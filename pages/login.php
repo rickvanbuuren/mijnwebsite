@@ -7,11 +7,6 @@
  */
 
 
-//if(isset($_SESSION['u_id'])){
-//    header("Location: ../pages/controlpanel.php");
-//    exit();
-//}
-
 if(isset($_GET['login'])){
     $loginAttempt = $_GET['login'];
     if($loginAttempt == 'succes'){
@@ -39,7 +34,7 @@ if(isset($_GET['login'])){
 <body>
 
 <div class="container custom-margin">
-    <div class="row">
+    <div class="row" style="width: 66%;margin-top: 170px;">
         <form class="col s12" action="../includes/loginform.inc.php" method="POST">
             <div class="row">
                 <div class="input-field col s12">
@@ -54,7 +49,7 @@ if(isset($_GET['login'])){
                 </div>
             </div>
             <div class="row">
-                <button class="btn waves-effect waves-light" type="submit" name="submit">Login
+                <button style="background-color: #48adcc;" class="btn waves-effect waves-light" type="submit" name="submit">Login
                     <i class="material-icons right">send</i>
                 </button>
             </div>

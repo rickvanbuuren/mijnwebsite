@@ -1,4 +1,9 @@
 <?php
+
+if(!isset($_SESSION['u_id'])){
+    session_start();
+}
+
 switch(gethostname()){
     case '.com':
         $rootFolder = ''; break;

@@ -26,7 +26,6 @@ if(isset($_SESSION['u_id'])){
 
     $sql = "UPDATE content SET content.title = '$title', content.description = '$description' WHERE content.id = '$post_id'";
 
-
     if(!mysqli_query($connection, $sql)){
         echo 'Error description: ' . mysqli_error($connection);
     }

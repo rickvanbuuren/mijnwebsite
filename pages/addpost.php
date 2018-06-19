@@ -46,7 +46,7 @@ if(!isset($_SESSION['u_id'])){
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input name="image" id="image" type="file" autocomplete="image" class="validate">
+                <input style="margin-left: 50px;" name="image" id="image" type="file" autocomplete="image" class="validate">
                 <label for="image">Image</label>
             </div>
         </div>
@@ -54,8 +54,6 @@ if(!isset($_SESSION['u_id'])){
             <div class="input-field col s12">
                     <textarea name="description" form="postform" id="description" class="materialize-textarea"></textarea>
                     <label for="description">Description</label>
-<!--                <input name="password" id="password" type="password" autocomplete="password" class="validate">-->
-<!--                <label for="password">Password</label>-->
             </div>
         </div>
 
@@ -63,7 +61,7 @@ if(!isset($_SESSION['u_id'])){
         <input name="size" type="hidden" value="1000000" hidden>
 
         <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="submit">Post
+            <button style="background-color: #48adcc;" class="btn waves-effect waves-light" type="submit" name="submit">Post
                 <i class="material-icons right">send</i>
             </button>
         </div>

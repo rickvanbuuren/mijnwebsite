@@ -56,7 +56,7 @@ if(!isset($_SESSION['u_id'])){
 
                 foreach($posts as $key => $post){
                     ?>
-                    <li>
+                    <li class="post">
                         <form class="col s12 post-form" action="../includes/updatepost.inc.php" method="POST">
                             <a href="../includes/removepost.inc.php?remove=<?= $post['id']; ?>">Remove <?= $post['title'] ;?></a>
                             <div class="row">
@@ -82,7 +82,7 @@ if(!isset($_SESSION['u_id'])){
                             <input name="post_id" id="post_id" type="hidden" value="<?= $post['id']; ?>" hidden>
 
                             <div class="row">
-                                <button class="btn waves-effect waves-light" type="submit" name="submit">Update
+                                <button style="background-color: #48adcc;" class="btn waves-effect waves-light" type="submit" name="submit">Update
                                     <i class="material-icons right">backup</i>
                                 </button>
                             </div>

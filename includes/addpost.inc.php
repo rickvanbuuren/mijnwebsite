@@ -26,8 +26,6 @@ if(isset($_SESSION['u_id'])){
 
         $id = $connection->insert_id;
 
-        var_dump($id);
-
         $msg = '';
 
         $image = $_FILES['image']['name'];

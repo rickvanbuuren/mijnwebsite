@@ -28,7 +28,7 @@ switch(gethostname()){
             <li><a href="<?= $rootFolder ?>/index.php">Home</a></li>
 
             <!--     denk aan github links voor in about me       -->
-            <li><a href="<?= $rootFolder ?>/pages/projects.php">About me</a></li>
+            <li><a href="<?= $rootFolder ?>/pages/aboutme.php">About me</a></li>
 
             <li><a href="<?= $rootFolder ?>/pages/projects.php">Projects</a></li>
 

@@ -5,10 +5,21 @@
  * Date: 15-6-2018
  * Time: 13:25
  */
+
+switch(gethostname()){
+    case 'rickvb.nl':
+        $rootFolder = ''; break;
+    case 'Rick-PC':
+        $rootFolder = '/mywebsite'; break;
+    default:
+}
+
 ?>
 
+
+
 <section class="homepage clearfix">
-    <img class="background-img responsive-img" src="/mywebsite/images/1030-1.png">
+    <img class="background-img responsive-img" src="<?= $rootFolder?>/images/1030-1.png">
     <div class="container responsive-img">
         <div class="row homepage-content">
             <div class="col s12">

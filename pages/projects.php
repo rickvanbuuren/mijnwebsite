@@ -52,5 +52,9 @@ include_once ('../includes/nav.php')
         </ul>
     </div>
 
+    <?php
+    include_once ('../includes/footer.php')
+    ?>
+
 </body>
 </html>

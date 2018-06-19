@@ -33,9 +33,7 @@ include_once ('../includes/nav.php');
     <div class="container">
         <div class="row my-card remove-margin-bottom">
             <div class="col s6">
-                <p class="">
-                    <img class="responsive-img" src="/mywebsite/images/me.jpg">
-                </p>
+                <img class="responsive-img" src="<?= $rootFolder?>/images/me.jpg">
             </div>
             <div class="col s6">
                 <div class="row">
@@ -44,7 +42,7 @@ include_once ('../includes/nav.php');
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s3">
+                    <div class="col s4">
                         <ul>
                             <li>Age</li>
                             <li>Address</li>
@@ -52,7 +50,7 @@ include_once ('../includes/nav.php');
                             <li>Phone</li>
                         </ul>
                     </div>
-                    <div class="col s9">
+                    <div class="col s8">
                         <ul>
                             <li>22</li>
                             <li>Foreest 20</li>
